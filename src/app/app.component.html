@@ -12,7 +12,7 @@
   <input type="text" value={{name}} disabled={{disable}}> -->
 <!-- <input type="text" [value]="name" [disabled]="disable"> -->
 
-<!-- ng if condition code -->
+<!-- ng if condition code -->    
 <!-- <h1 *ngIf="show; then ifblock else elseblock"></h1>
 
 <ng-template #ifblock>
@@ -41,3 +41,110 @@
   <h1 *ngSwitchDefault>default</h1>
 
 </div> -->
+
+
+
+<!-- ng for loop  -->
+<!-- <div>
+  <h1 *ngFor="let item of users">{{item}}</h1>
+  
+  
+  <h1 *ngFor="let i of usersdata">{{i.name}} </h1>
+  <h1 *ngFor="let i of usersdata"> {{i.id}}</h1>
+
+</div> -->
+
+<!-- nested lopp in angular -->
+<!-- <div>
+  <ul *ngFor="let user of users">
+    <li>Name :{{user.name}}</li>
+    <li> Phone:{{user.phone}}</li>
+    <li> Social Accounts</li>
+    <ul *ngFor="let account of user.socialAccounts">
+           <li>{{account}}</li>
+    </ul>
+</ul>
+</div> -->
+
+
+<!-- style binding -->
+<!-- <div>
+  <h1 [style.color]="color" [style.backgroundColor]="bgColor">my name is muddassir ali rana</h1>
+  <button (click)="updatecolor()">update color</button>
+
+</div> -->
+
+<!-- angular basic form code -->
+
+<!-- <form #basicForm="ngForm" (ngSubmit)="getdata(basicForm.value)">
+  <input type="text" ngModel placeholder="user" name="user">
+  <br> <br>
+  <input type="email" ngModel placeholder="email" name="mail">
+  <br> <br>
+  <input type="password" ngModel placeholder="user password" name="password">
+  <br> <br>
+  <button>submit</button>
+</form>
+
+<ul>
+  <li>{{userdata.user}}</li>
+  <li>{{userdata.mail}}</li>
+  <li>{{userdata.password}}</li>
+</ul> -->
+
+<!-- togele  button code -->
+<!-- <button (click)="togle()">toggle</button>
+<h1 *ngIf="display">heding</h1> -->
+
+<!-- bootstarp using -->
+<!-- <div>
+  <div class="alert alert-primary" role="alert">
+    A simple primary alert—check it out!
+  </div>
+
+</div> -->
+
+<!-- material ui using -->
+<!-- <div>
+  <mat-slider min="1" max="100" step="1" value="50"></mat-slider>
+</div> -->
+
+<!-- todolist code -->
+<!-- <div>
+  <input type="text" placeholder="enter task" #task>
+  <br><br>
+  <button (click)="addtask(task.value)">add task</button>
+
+  <ul *ngFor="let i of todos">
+    <li>{{i.id}}:{{i.name}}  <button (click)="remove(i.id)">remove</button></li>
+
+  </ul>
+</div> -->
+
+<!-- paretn to chid pass data code -->
+<!-- <div>
+  <app-child [item]="data" ></app-child>
+  <button (click)="updatchild()">update child data</button>
+</div> -->
+
+<!-- component reuseable -->
+<!-- <ul *ngFor="let user of users">
+  <app-users [item]="user"></app-users>
+</ul> -->
+
+<!-- data send child to parent code -->
+<!-- <div>
+  <h1>{{data}}</h1>
+  <app-child (updateDataEvent)="updateData($event)"></app-child>
+</div> -->
+
+<!-- two way binding code -->
+<!-- <div>
+  <input type="text" [(ngModel)]="name">
+  <h1>{{name}}</h1>
+</div> -->
+
+<!-- template refrence variable -->
+<!-- jo hum input k ander #se id dete hain use hi template refrence kehte hain -->
+<input type="text" #box>
+<button (click)="getval(box.value)">get</button>

@@ -1,0 +1,7 @@
+<!-- parent to childe data -->
+<!-- <p>child works! {{item}}</p> -->
+<!-- child to parent data -->
+<p>child works! </p>
+
+<input type="text" #box>
+<button (click)="updateDataEvent.emit(box.value)">update Data</button>
