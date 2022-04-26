@@ -1,6 +1,5 @@
 <div class="container">
-  <p>{{title}}</p>
- 
+  <p>{{ title }}</p>
 </div>
 <!--  // counter APP code
 <button (click)="counter('add')">++</button>
@@ -12,7 +11,7 @@
   <input type="text" value={{name}} disabled={{disable}}> -->
 <!-- <input type="text" [value]="name" [disabled]="disable"> -->
 
-<!-- ng if condition code -->    
+<!-- ng if condition code -->
 <!-- <h1 *ngIf="show; then ifblock else elseblock"></h1>
 
 <ng-template #ifblock>
@@ -42,8 +41,6 @@
 
 </div> -->
 
-
-
 <!-- ng for loop  -->
 <!-- <div>
   <h1 *ngFor="let item of users">{{item}}</h1>
@@ -65,7 +62,6 @@
     </ul>
 </ul>
 </div> -->
-
 
 <!-- style binding -->
 <!-- <div>
@@ -146,5 +142,74 @@
 
 <!-- template refrence variable -->
 <!-- jo hum input k ander #se id dete hain use hi template refrence kehte hain -->
-<input type="text" #box>
-<button (click)="getval(box.value)">get</button>
+<!-- <input type="text" #box>
+<button (click)="getval(box.value)">get</button> -->
+
+<!-- // // pipes in Angular
+  // yeh hamre data ko aik form se dosre form mai transfer karte hain examplae jese apko date k formate ko change karne hai
+  // string ko case senitive banana hai pipes html wali file main use hote hain  -->
+
+<!-- <h1>my name is rana | uppercase</h1>
+  <h1>{{title | uppercase}}</h1>
+  <h1>{{title | lowercase}}</h1>
+  <h1>{{today | date:"fullDate"}}</h1> -->
+
+<!-- with out pipe -->
+<!-- <h1>{{capFun(title)}}</h1>
+   -->
+<!-- use two pipes in one element -->
+<!-- <h1>{{title | slice:3:6 | uppercase}}</h1> -->
+<!-- advance pipes -->
+<!-- <h1>{{title | slice:3:6 }}</h1> -->
+<!-- <h1>{{user | json }}</h1> -->
+<!-- <h1>{{3022.2500 | number :'2.2-3'}}</h1>
+<h1>{{3.2 | number :'4.3-5'}}</h1> -->
+
+<!-- <h1>{{52 | currency:'USD'}}</h1> -->
+
+<!-- custom pipe -->
+<!-- comamnd ng g p pipe name -->
+<!-- <h2> {{100 | usdPkr:120 }}</h2> -->
+
+<!-- forms
+there are two types of forms
+template driven form  is main work handle html  wali file mai karte hain
+reactive form   is main work component wali file main karte hain
+
+-->
+
+<!-- <form #submitForm="ngForm" (ngSubmit)="login(submitForm.value)">
+  <input type="text" ngModel name="name" placeholder="enter a Name">
+  <br><br>
+  <input type="password" ngModel name="password" placeholder="enter a password">
+  <br><br>
+  <button>submit</button>
+</form> -->
+
+<!-- reactive form code -->
+<!-- <form [formGroup]="login" (ngSubmit)="loginUser()">
+  <input
+    type="text"
+    name="name"
+    placeholder="enter a Name"
+    formControlName="name"
+  />
+  <br /><br />
+  <span *ngIf="name && name.invalid && name.touched" style="color: red;">this is invalid</span>
+  <br />
+  <input
+    type="password"
+    formControlName="password"
+    name="password"
+    placeholder="enter a password"
+  />
+  <br /><br />
+  <button [disabled]="login.invalid">submit</button>
+</form> -->
+
+
+<!-- directiv custom -->
+<h1>ali</h1>
+<h1 appElcolor>ali</h1>
+<h1>ali</h1>
+<h1 appElcolor>ali</h1>

@@ -1,5 +1,9 @@
 import { Component, Type } from '@angular/core';
+// for template driven form
 import { FormsModule, NgForm } from '@angular/forms';
+// for reactive form
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -108,8 +112,73 @@ export class AppComponent {
 // two way binding code
 // name:any;
 // <!-- template refrence variable -->
-getval(item:any){
-console.log(item);
+// getval(item:any){
+// console.log(item);
 
-}
+// }
+
+// type script code
+// 
+// data=10  //its js
+// Data:number=10 //its Ts
+// types of type script is number, string, boolen , any(is main koi bhi asakta hai) 
+// agar humain do type rakhni hon to
+// dataType:number | boolean = 0;
+// getData(item:number | boolean){
+//   if (typeof item==="number"){
+//     return item*20;
+//   }
+// }
+
+// object:{name:string,id:number}={name:"ali",id:2};
+// array:string[]=[]
+
+  // // pipes in Angular
+  // yeh hamre data ko aik form se dosre form mai transfer karte hain examplae jese apko date k formate ko change karne hai
+  // string ko case senitive banana hai pipes html wali file main use hote hain 
+// today=Date()
+
+// capFun(item:string){
+//   return item.toUpperCase()
+// }
+
+
+// user={name:"ali",id:25}
+
+
+// form code template driven
+// login(item:any){
+//   console.log(item)
+// }
+
+// form code reactive part form with validation
+
+// login=new FormGroup({
+//   name:new FormControl("",[Validators.required,Validators.pattern("[a-zA-Z]+$")]),
+//   password :new FormControl("",[Validators.required,Validators.minLength(6)])
+// })
+
+// loginUser(){
+//   console.log(this.login.value)
+// }
+
+// get name(){
+//   return this.login.get("name")
+// }
+// get password(){
+//   return this.login.get("password")
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
