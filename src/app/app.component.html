@@ -209,7 +209,29 @@ reactive form   is main work component wali file main karte hain
 
 
 <!-- directiv custom -->
-<h1>ali</h1>
+<!-- <h1>ali</h1>
 <h1 appElcolor>ali</h1>
 <h1>ali</h1>
-<h1 appElcolor>ali</h1>
+<h1 appElcolor>ali</h1> -->
+
+
+<!-- routing -->
+<h1>good</h1>
+<a routerLink="about">about</a>
+<br>
+<a routerLink="contact">contact</a>
+<br>
+<a routerLink="">home</a>
+
+<!-- for dynamic routing -->
+<br>
+<a routerLink="about/13">about1</a><br>
+<a routerLink="about/21">about2</a>
+<br>
+<router-outlet></router-outlet>
+
+<ul *ngFor="let item of member">
+  <li>{{item.name}}</li>
+</ul>
+
+<app-footer></app-footer>

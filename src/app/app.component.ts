@@ -169,8 +169,14 @@ export class AppComponent {
 //   return this.login.get("password")
 // }
 
+// service code
 
-
+member=[
+  {name:"ali",id:20},
+  {name:"ali",id:20},
+  {name:"ali",id:20},
+  {name:"ali",id:20},
+]
 
 
 

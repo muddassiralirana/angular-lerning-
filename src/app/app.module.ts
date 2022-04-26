@@ -11,6 +11,13 @@ import { UsdPkrPipe } from './customPipes/usd-pkr.pipe'
 import { ReactiveFormsModule } from '@angular/forms';
 import { ElcolorDirective } from './directive/elcolor.directive';
 import { AppRoutingModule } from './app-routing.module';
+import { AboutComponent } from './routing/about/about.component';
+import { HomeComponent } from './routing/home/home.component';
+import { ContactComponent } from './routing/contact/contact.component';
+import { NopageComponent } from './routing/nopage/nopage.component';
+import { Aboutchil1Component } from './routing/aboutchil1/aboutchil1.component';
+import { Aboutchil2Component } from './routing/aboutchil2/aboutchil2.component';
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +25,14 @@ import { AppRoutingModule } from './app-routing.module';
     ChildComponent,
     UsersComponent,
     UsdPkrPipe,
-    ElcolorDirective
+    ElcolorDirective,
+    AboutComponent,
+    HomeComponent,
+    ContactComponent,
+    NopageComponent,
+    Aboutchil1Component,
+    Aboutchil2Component,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
