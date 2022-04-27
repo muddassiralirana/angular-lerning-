@@ -3,6 +3,22 @@ import { Component, Type } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 // for reactive form
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+// for srvice use
+import {UserdataService} from "./services/userdata.service"
+// for api
+import {ApidataService}  from "./services/apidata.service"
+
+// typrscript interface
+
+// interface dataType={
+//   name:string,
+//   id:number
+
+// };
+
+
+
+
 
 @Component({
   selector: 'app-root',
@@ -171,15 +187,47 @@ export class AppComponent {
 
 // service code
 
-member=[
-  {name:"ali",id:20},
-  {name:"ali",id:20},
-  {name:"ali",id:20},
-  {name:"ali",id:20},
-]
+// member=[
+//   {name:"ali",id:20},
+//   {name:"ali",id:20},
+//   {name:"ali",id:20},
+//   {name:"ali",id:20},
+// ]
+// user:any;
+// constructor(private userdata:UserdataService){
+// console.log(userdata.users())
+// this.user=userdata.users()
+// }
+
+// api calls code
+// datas:any;
+// constructor(private apidata:ApidataService){
+// this.apidata.user().subscribe((data)=>{
+//   this.datas=data
+//   console.warn(data)
+
+// })
+
+// }
+
+// addData(data:any)
+// {
+// console.warn(data)
+// this.apidata.sendData(data).subscribe((result)=>{
+// console.log(result)
+// })
 
 
+// }
 
+// typescript mode and interface
+
+// getdata(){
+//   let data:dataType={
+//     name:"Ali"
+//   }
+  
+// }
 
 
 

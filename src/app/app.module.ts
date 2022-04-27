@@ -18,6 +18,8 @@ import { NopageComponent } from './routing/nopage/nopage.component';
 import { Aboutchil1Component } from './routing/aboutchil1/aboutchil1.component';
 import { Aboutchil2Component } from './routing/aboutchil2/aboutchil2.component';
 import { FooterComponent } from './footer/footer.component';
+// for api 
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +43,7 @@ import { FooterComponent } from './footer/footer.component';
     MatSliderModule,
     ReactiveFormsModule,
     AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

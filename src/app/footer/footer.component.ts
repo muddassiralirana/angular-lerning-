@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {UserdataService} from "../services/userdata.service"
+import {ApidataService} from "../services/apidata.service"
 
 @Component({
   selector: 'app-footer',
@@ -7,7 +9,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+
+  // for service
+  // user:any;
+  // constructor(private userdata:UserdataService){
+  // console.log(userdata.users())
+  // this.user=userdata.users()
+  // }
+
+
+
+  // for api
+
+  datas:any;
+constructor(private apidata:ApidataService){
+apidata.user().subscribe((data)=>{
+  this.datas=data
+  console.warn(data)
+
+})
+}
+  
 
   ngOnInit(): void {
   }
