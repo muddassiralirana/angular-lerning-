@@ -18,6 +18,7 @@ import { NopageComponent } from './routing/nopage/nopage.component';
 import { Aboutchil1Component } from './routing/aboutchil1/aboutchil1.component';
 import { Aboutchil2Component } from './routing/aboutchil2/aboutchil2.component';
 import { FooterComponent } from './footer/footer.component';
+import {ModuleModule} from "./module/module.module"
 // for api 
 import { HttpClientModule } from '@angular/common/http';
 @NgModule({
@@ -44,6 +45,7 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
+    ModuleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
